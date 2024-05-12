@@ -9,39 +9,42 @@
 </head>
 <body>
     <div class="menu-latera">
-        <ul>
-        <nav class="item-menu">
+            <div id="burguer" class="menu" onclick="clickMenu()">
+                <i class="bi bi-list"></i>
+            </div>
+        <ul id="itens">
+            <nav class="item-menu">
                 <li>
                     <a href="#">
                         <span class="icon"><i class="bi bi-house"></i></span>
                         <span  class="text">home</span>
                     </a>
                 </li>
-        </nav>
-        <nav class="item-menu">
+            </nav>
+            <nav class="item-menu">
                 <li>
                     <a href="#">
                         <span class="icon"><i class="bi bi-gear"></i></span>
                         <span  class="text">Configuração</span>
                     </a>
                 </li>
-        </nav>
-        <nav class="item-menu">
+            </nav>
+             <nav class="item-menu">
                 <li>
                     <a href="#">
                         <span class="icon"><i class="bi bi-calendar-range"></i></span>
                         <span class="text">Calendario</span>
                     </a>
                 </li>
-        </nav>
-        <nav class="item-menu">
+            </nav>
+            <nav class="item-menu">
                 <li>
                     <a href="#">
                         <span class="icon"><i class="bi bi-file-person"></i></span>
                         <span  class="text">Sobre</span>
                     </a>
                 </li>
-        </nav>
+            </nav>
         </ul>
     </div>
     <main class="container">
@@ -55,5 +58,14 @@
             </picture>
         </div>
     </main>
+    <script>
+        function clickMenu() {
+           if (itens.style.display == 'block') {
+             itens.style.display = 'none'
+           } else {
+            itens.style.display =  'block'
+           }
+        }
+    </script>
 </body>
 </html>
